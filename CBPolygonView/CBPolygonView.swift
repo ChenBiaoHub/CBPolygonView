@@ -5,10 +5,11 @@
 //  Created by 陈彪 on 2017/11/29.
 //  Copyright © 2017年 小黑屋. All rights reserved.
 //
+// Github地址：https://github.com/ChenBiaoHub/CBPolygonView
 
 import UIKit
 enum CBPolygonType {
-    /** 原型 */
+    /** 圆形 */
     case circle
     /** 多边形 */
     case polygon
@@ -69,6 +70,8 @@ class CBPolygonView: UIView {
     /** 样式 */
     public var type : CBPolygonType = CBPolygonType.polygon
     
+//************************************************************************
+//************************************************************************
     //MARK: - 私有属性
     /** 百分比 */
     private var percent : [CGFloat] = []
@@ -105,6 +108,13 @@ class CBPolygonView: UIView {
         fatalError("init(coder:) has not been implemented")
     }
     
+    
+    /// 绘制能力图
+    ///
+    /// - Parameters:
+    ///   - aPercent: 能力占比（例如[0.8, 0.9, 0.6]）
+    ///   - aTitles: 能力描述
+    ///   - aRadius: 外圈圆的半径
     public func cb_drawPolygon(percent aPercent : [CGFloat], titles aTitles : [String], radius aRadius : CGFloat) {
         if aPercent.count < 3 {
             print("边数要大于3才能画能力图")

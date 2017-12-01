@@ -5,6 +5,7 @@
 //  Created by 陈彪 on 2017/11/30.
 //  Copyright © 2017年 小黑屋. All rights reserved.
 //
+// Github地址：https://github.com/ChenBiaoHub/CBPolygonView
 
 import UIKit
 import CoreData

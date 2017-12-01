@@ -5,6 +5,7 @@
 //  Created by 陈彪 on 2017/11/30.
 //  Copyright © 2017年 小黑屋. All rights reserved.
 //
+// Github地址：https://github.com/ChenBiaoHub/CBPolygonView
 
 import UIKit
 
@@ -22,7 +23,7 @@ class ViewController: UIViewController {
         topView.circles = [0.8, 0.5]
         topView.cb_drawPolygon(percent:[0.5, 0.6, 0.4, 0.8, 0.6, 0.8, 0.9] , titles: ["击杀", "金钱", "防御", "魔法", "物理", "助攻","生存"], radius: 120)
         self.view.addSubview(topView)
-        
+                
         
         let bottomView = CBPolygonView.init(frame: .init(x: 0, y: screenHeight/2.0, width: screenWidth, height: screenHeight/2.0))
         bottomView.type = .circle
@@ -35,6 +36,5 @@ class ViewController: UIViewController {
         bottomView.titleFont = UIFont.systemFont(ofSize: 12)
         bottomView.cb_drawPolygon(percent:[0.4, 0.8, 0.6, 0.8, 0.6] , titles: ["生存", "战绩(KDA)", "输出", "发育", "团战"], radius: 80)
         self.view.addSubview(bottomView)
-        
     }
 }
