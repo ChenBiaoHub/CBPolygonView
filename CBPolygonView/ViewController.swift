@@ -21,6 +21,7 @@ class ViewController: UIViewController {
     func addTestView() {
         let topView = CBPolygonView.init(frame: .init(x: 0, y: 0, width: screenWidth, height: screenHeight/2.0))
         topView.circles = [0.8, 0.5]
+        topView.angle = CGFloat.pi/2.0
         topView.cb_drawPolygon(percent:[0.5, 0.6, 0.4, 0.8, 0.6, 0.8, 0.9] , titles: ["击杀", "金钱", "防御", "魔法", "物理", "助攻","生存"], radius: 120)
         self.view.addSubview(topView)
                 

@@ -108,7 +108,7 @@ class CBPolygonView: UIView {
         fatalError("init(coder:) has not been implemented")
     }
     
-    
+
     /// 绘制能力图
     ///
     /// - Parameters:

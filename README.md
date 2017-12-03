@@ -2,7 +2,7 @@
 能力图，分布图
 - 一句话调用
 ```
-CBPolygonView().cb_drawPolygon(percent:[0.5, 0.6, 0.4, 0.8, 0.6, 0.8, 0.9] , titles: ["击杀", "金钱", "防御", "魔法", "物理", "助攻","生存"], radius: 120)
+cb_drawPolygon(percent:[0.5, 0.6, 0.4, 0.8, 0.6, 0.8, 0.9] , titles: ["击杀", "金钱", "防御", "魔法", "物理", "助攻","生存"], radius: 120)
 ```
 ![image](https://github.com/ChenBiaoHub/CBPolygonView/blob/master/IMG_0093.PNG?raw=true)
 - 可自定义选项
@@ -34,4 +34,4 @@ CBPolygonView().cb_drawPolygon(percent:[0.5, 0.6, 0.4, 0.8, 0.6, 0.8, 0.9] , tit
 旋转角度(180°写成 π ) : angle
 ```
 
-- 如有任何疑问或者需求，欢迎提交到issues或者我的邮箱 chengbiao9494@163.com
+- 如有任何疑问或者需求，欢迎提交到issues或者我的邮箱 chenbiao9494@163.com
