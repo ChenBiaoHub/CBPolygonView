@@ -160,11 +160,11 @@ class CBPolygonView: UIView {
         
         switch self.type {
         case .circle:
-            context.addArc(center: self.myCenter, radius: radius, startAngle: 0, endAngle: CGFloat(Double.pi * 2.0), clockwise:true)
+            context.addArc(center: self.myCenter, radius: self.maxRadius, startAngle: 0, endAngle: CGFloat(Double.pi * 2.0), clockwise:true)
             context.drawPath(using: .stroke)
             
             for percent in self.circles {
-                context.addArc(center: self.myCenter, radius: radius * percent, startAngle: 0, endAngle: CGFloat(Double.pi * 2.0), clockwise:true)
+                context.addArc(center: self.myCenter, radius: self.maxRadius * percent, startAngle: 0, endAngle: CGFloat(Double.pi * 2.0), clockwise:true)
                 context.drawPath(using: .stroke)
             }
             break
