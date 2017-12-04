@@ -80,7 +80,7 @@ class CBPolygonView: UIView {
     private var side : Int = 0
     
     /** 大圆边长 */
-    private var radius : CGFloat = 0.0
+    private var maxRadius : CGFloat = 0.0
     
     /** 圆上顶点坐标 */
     private var maxApexs : [CGPoint] = []
@@ -122,7 +122,7 @@ class CBPolygonView: UIView {
         }
         self.percent = aPercent
         self.side = aPercent.count
-        self.radius = aRadius
+        self.maxRadius = aRadius
         self.titles = aTitles
         getAllPoint()
     }
@@ -130,8 +130,8 @@ class CBPolygonView: UIView {
     private func getAllPoint() {
         let a = CGFloat.pi * 2.0/CGFloat(self.side)
         for i in 0..<self.side {
-            let x1 = self.myCenter.x + (cos(a * CGFloat(i) + self.angle) * self.radius)
-            let y1 = self.myCenter.y - (sin(a * CGFloat(i) + self.angle) * self.radius)
+            let x1 = self.myCenter.x + (cos(a * CGFloat(i) + self.angle) * self.maxRadius)
+            let y1 = self.myCenter.y - (sin(a * CGFloat(i) + self.angle) * self.maxRadius)
             self.maxApexs.append(.init(x: x1, y: y1))
             
             
@@ -141,8 +141,8 @@ class CBPolygonView: UIView {
             
             if (self.titles != nil) {
                 if self.titles!.count > 0 {
-                    let x3 = self.myCenter.x + (cos(a * CGFloat(i) + self.angle) * (self.radius + self.titleDistance))
-                    let y3 = self.myCenter.y - (sin(a * CGFloat(i) + self.angle) * (self.radius + self.titleDistance))
+                    let x3 = self.myCenter.x + (cos(a * CGFloat(i) + self.angle) * (self.maxRadius + self.titleDistance))
+                    let y3 = self.myCenter.y - (sin(a * CGFloat(i) + self.angle) * (self.maxRadius + self.titleDistance))
                     self.titleCenter.append(.init(x: x3, y: y3))                    
                 }
             }
