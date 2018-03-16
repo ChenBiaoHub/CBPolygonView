@@ -7,29 +7,27 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0491F9F71FD03D4E00CF0B56 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0491F9F61FD03D4E00CF0B56 /* AppDelegate.swift */; };
-		0491F9F91FD03D4E00CF0B56 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0491F9F81FD03D4E00CF0B56 /* ViewController.swift */; };
-		0491F9FC1FD03D4E00CF0B56 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0491F9FA1FD03D4E00CF0B56 /* Main.storyboard */; };
-		0491F9FF1FD03D4E00CF0B56 /* CBPolygonView.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0491F9FD1FD03D4E00CF0B56 /* CBPolygonView.xcdatamodeld */; };
-		0491FA011FD03D4E00CF0B56 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0491FA001FD03D4E00CF0B56 /* Assets.xcassets */; };
-		0491FA041FD03D4E00CF0B56 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0491FA021FD03D4E00CF0B56 /* LaunchScreen.storyboard */; };
-		0491FA0C1FD03D8600CF0B56 /* CBPolygonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0491FA0B1FD03D8600CF0B56 /* CBPolygonView.swift */; };
+		04BB12CC205BD41C00E5119C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04BB12CB205BD41C00E5119C /* AppDelegate.swift */; };
+		04BB12CE205BD41C00E5119C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04BB12CD205BD41C00E5119C /* ViewController.swift */; };
+		04BB12D1205BD41C00E5119C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04BB12CF205BD41C00E5119C /* Main.storyboard */; };
+		04BB12D3205BD41C00E5119C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04BB12D2205BD41C00E5119C /* Assets.xcassets */; };
+		04BB12D6205BD41C00E5119C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04BB12D4205BD41C00E5119C /* LaunchScreen.storyboard */; };
+		04BB12DE205BD46600E5119C /* CBPolygonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04BB12DD205BD46600E5119C /* CBPolygonView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		0491F9F31FD03D4E00CF0B56 /* CBPolygonView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CBPolygonView.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		0491F9F61FD03D4E00CF0B56 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		0491F9F81FD03D4E00CF0B56 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		0491F9FB1FD03D4E00CF0B56 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		0491F9FE1FD03D4E00CF0B56 /* CBPolygonView.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CBPolygonView.xcdatamodel; sourceTree = "<group>"; };
-		0491FA001FD03D4E00CF0B56 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		0491FA031FD03D4E00CF0B56 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		0491FA051FD03D4E00CF0B56 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		0491FA0B1FD03D8600CF0B56 /* CBPolygonView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CBPolygonView.swift; sourceTree = "<group>"; };
+		04BB12C8205BD41C00E5119C /* CBPolygonView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CBPolygonView.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		04BB12CB205BD41C00E5119C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		04BB12CD205BD41C00E5119C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		04BB12D0205BD41C00E5119C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		04BB12D2205BD41C00E5119C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		04BB12D5205BD41C00E5119C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		04BB12D7205BD41C00E5119C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		04BB12DD205BD46600E5119C /* CBPolygonView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CBPolygonView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		0491F9F01FD03D4E00CF0B56 /* Frameworks */ = {
+		04BB12C5205BD41C00E5119C /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -39,33 +37,32 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0491F9EA1FD03D4E00CF0B56 = {
+		04BB12BF205BD41C00E5119C = {
 			isa = PBXGroup;
 			children = (
-				0491F9F51FD03D4E00CF0B56 /* CBPolygonView */,
-				0491F9F41FD03D4E00CF0B56 /* Products */,
+				04BB12CA205BD41C00E5119C /* CBPolygonView */,
+				04BB12C9205BD41C00E5119C /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		0491F9F41FD03D4E00CF0B56 /* Products */ = {
+		04BB12C9205BD41C00E5119C /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				0491F9F31FD03D4E00CF0B56 /* CBPolygonView.app */,
+				04BB12C8205BD41C00E5119C /* CBPolygonView.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		0491F9F51FD03D4E00CF0B56 /* CBPolygonView */ = {
+		04BB12CA205BD41C00E5119C /* CBPolygonView */ = {
 			isa = PBXGroup;
 			children = (
-				0491F9F61FD03D4E00CF0B56 /* AppDelegate.swift */,
-				0491F9F81FD03D4E00CF0B56 /* ViewController.swift */,
-				0491FA0B1FD03D8600CF0B56 /* CBPolygonView.swift */,
-				0491F9FA1FD03D4E00CF0B56 /* Main.storyboard */,
-				0491FA001FD03D4E00CF0B56 /* Assets.xcassets */,
-				0491FA021FD03D4E00CF0B56 /* LaunchScreen.storyboard */,
-				0491FA051FD03D4E00CF0B56 /* Info.plist */,
-				0491F9FD1FD03D4E00CF0B56 /* CBPolygonView.xcdatamodeld */,
+				04BB12CB205BD41C00E5119C /* AppDelegate.swift */,
+				04BB12CD205BD41C00E5119C /* ViewController.swift */,
+				04BB12DD205BD46600E5119C /* CBPolygonView.swift */,
+				04BB12CF205BD41C00E5119C /* Main.storyboard */,
+				04BB12D2205BD41C00E5119C /* Assets.xcassets */,
+				04BB12D4205BD41C00E5119C /* LaunchScreen.storyboard */,
+				04BB12D7205BD41C00E5119C /* Info.plist */,
 			);
 			path = CBPolygonView;
 			sourceTree = "<group>";
@@ -73,13 +70,13 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		0491F9F21FD03D4E00CF0B56 /* CBPolygonView */ = {
+		04BB12C7205BD41C00E5119C /* CBPolygonView */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 0491FA081FD03D4E00CF0B56 /* Build configuration list for PBXNativeTarget "CBPolygonView" */;
+			buildConfigurationList = 04BB12DA205BD41C00E5119C /* Build configuration list for PBXNativeTarget "CBPolygonView" */;
 			buildPhases = (
-				0491F9EF1FD03D4E00CF0B56 /* Sources */,
-				0491F9F01FD03D4E00CF0B56 /* Frameworks */,
-				0491F9F11FD03D4E00CF0B56 /* Resources */,
+				04BB12C4205BD41C00E5119C /* Sources */,
+				04BB12C5205BD41C00E5119C /* Frameworks */,
+				04BB12C6205BD41C00E5119C /* Resources */,
 			);
 			buildRules = (
 			);
@@ -87,26 +84,26 @@
 			);
 			name = CBPolygonView;
 			productName = CBPolygonView;
-			productReference = 0491F9F31FD03D4E00CF0B56 /* CBPolygonView.app */;
+			productReference = 04BB12C8205BD41C00E5119C /* CBPolygonView.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		0491F9EB1FD03D4E00CF0B56 /* Project object */ = {
+		04BB12C0205BD41C00E5119C /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0910;
-				LastUpgradeCheck = 0910;
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 0920;
 				ORGANIZATIONNAME = "小黑屋";
 				TargetAttributes = {
-					0491F9F21FD03D4E00CF0B56 = {
-						CreatedOnToolsVersion = 9.1;
+					04BB12C7205BD41C00E5119C = {
+						CreatedOnToolsVersion = 9.2;
 						ProvisioningStyle = Automatic;
 					};
 				};
 			};
-			buildConfigurationList = 0491F9EE1FD03D4E00CF0B56 /* Build configuration list for PBXProject "CBPolygonView" */;
+			buildConfigurationList = 04BB12C3205BD41C00E5119C /* Build configuration list for PBXProject "CBPolygonView" */;
 			compatibilityVersion = "Xcode 8.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -114,56 +111,55 @@
 				en,
 				Base,
 			);
-			mainGroup = 0491F9EA1FD03D4E00CF0B56;
-			productRefGroup = 0491F9F41FD03D4E00CF0B56 /* Products */;
+			mainGroup = 04BB12BF205BD41C00E5119C;
+			productRefGroup = 04BB12C9205BD41C00E5119C /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				0491F9F21FD03D4E00CF0B56 /* CBPolygonView */,
+				04BB12C7205BD41C00E5119C /* CBPolygonView */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		0491F9F11FD03D4E00CF0B56 /* Resources */ = {
+		04BB12C6205BD41C00E5119C /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0491FA041FD03D4E00CF0B56 /* LaunchScreen.storyboard in Resources */,
-				0491FA011FD03D4E00CF0B56 /* Assets.xcassets in Resources */,
-				0491F9FC1FD03D4E00CF0B56 /* Main.storyboard in Resources */,
+				04BB12D6205BD41C00E5119C /* LaunchScreen.storyboard in Resources */,
+				04BB12D3205BD41C00E5119C /* Assets.xcassets in Resources */,
+				04BB12D1205BD41C00E5119C /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		0491F9EF1FD03D4E00CF0B56 /* Sources */ = {
+		04BB12C4205BD41C00E5119C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0491F9FF1FD03D4E00CF0B56 /* CBPolygonView.xcdatamodeld in Sources */,
-				0491F9F91FD03D4E00CF0B56 /* ViewController.swift in Sources */,
-				0491FA0C1FD03D8600CF0B56 /* CBPolygonView.swift in Sources */,
-				0491F9F71FD03D4E00CF0B56 /* AppDelegate.swift in Sources */,
+				04BB12DE205BD46600E5119C /* CBPolygonView.swift in Sources */,
+				04BB12CE205BD41C00E5119C /* ViewController.swift in Sources */,
+				04BB12CC205BD41C00E5119C /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		0491F9FA1FD03D4E00CF0B56 /* Main.storyboard */ = {
+		04BB12CF205BD41C00E5119C /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				0491F9FB1FD03D4E00CF0B56 /* Base */,
+				04BB12D0205BD41C00E5119C /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		0491FA021FD03D4E00CF0B56 /* LaunchScreen.storyboard */ = {
+		04BB12D4205BD41C00E5119C /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				0491FA031FD03D4E00CF0B56 /* Base */,
+				04BB12D5205BD41C00E5119C /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -171,7 +167,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		0491FA061FD03D4E00CF0B56 /* Debug */ = {
+		04BB12D8205BD41C00E5119C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -219,7 +215,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -228,7 +224,7 @@
 			};
 			name = Debug;
 		};
-		0491FA071FD03D4E00CF0B56 /* Release */ = {
+		04BB12D9205BD41C00E5119C /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -270,7 +266,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -278,13 +274,14 @@
 			};
 			name = Release;
 		};
-		0491FA091FD03D4E00CF0B56 /* Debug */ = {
+		04BB12DB205BD41C00E5119C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = EN6B6372PE;
 				INFOPLIST_FILE = CBPolygonView/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.chenbiao.CBPolygonView;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -293,13 +290,14 @@
 			};
 			name = Debug;
 		};
-		0491FA0A1FD03D4E00CF0B56 /* Release */ = {
+		04BB12DC205BD41C00E5119C /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = EN6B6372PE;
 				INFOPLIST_FILE = CBPolygonView/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.chenbiao.CBPolygonView;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -311,38 +309,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		0491F9EE1FD03D4E00CF0B56 /* Build configuration list for PBXProject "CBPolygonView" */ = {
+		04BB12C3205BD41C00E5119C /* Build configuration list for PBXProject "CBPolygonView" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				0491FA061FD03D4E00CF0B56 /* Debug */,
-				0491FA071FD03D4E00CF0B56 /* Release */,
+				04BB12D8205BD41C00E5119C /* Debug */,
+				04BB12D9205BD41C00E5119C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		0491FA081FD03D4E00CF0B56 /* Build configuration list for PBXNativeTarget "CBPolygonView" */ = {
+		04BB12DA205BD41C00E5119C /* Build configuration list for PBXNativeTarget "CBPolygonView" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				0491FA091FD03D4E00CF0B56 /* Debug */,
-				0491FA0A1FD03D4E00CF0B56 /* Release */,
+				04BB12DB205BD41C00E5119C /* Debug */,
+				04BB12DC205BD41C00E5119C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCVersionGroup section */
-		0491F9FD1FD03D4E00CF0B56 /* CBPolygonView.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				0491F9FE1FD03D4E00CF0B56 /* CBPolygonView.xcdatamodel */,
-			);
-			currentVersion = 0491F9FE1FD03D4E00CF0B56 /* CBPolygonView.xcdatamodel */;
-			path = CBPolygonView.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-/* End XCVersionGroup section */
 	};
-	rootObject = 0491F9EB1FD03D4E00CF0B56 /* Project object */;
+	rootObject = 04BB12C0205BD41C00E5119C /* Project object */;
 }

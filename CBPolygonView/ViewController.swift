@@ -2,17 +2,15 @@
 //  ViewController.swift
 //  CBPolygonView
 //
-//  Created by 陈彪 on 2017/11/30.
-//  Copyright © 2017年 小黑屋. All rights reserved.
+//  Created by 陈彪 on 2018/3/16.
+//  Copyright © 2018年 小黑屋. All rights reserved.
 //
-// Github地址：https://github.com/ChenBiaoHub/CBPolygonView
-
 import UIKit
 
 class ViewController: UIViewController {
     let screenWidth = UIScreen.main.bounds.width
     let screenHeight = UIScreen.main.bounds.height
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         addTestView()
@@ -24,7 +22,7 @@ class ViewController: UIViewController {
         topView.angle = CGFloat.pi/2.0
         topView.cb_drawPolygon(percent:[0.5, 0.6, 0.4, 0.8, 0.6, 0.8, 0.9] , titles: ["击杀", "金钱", "防御", "魔法", "物理", "助攻","生存"], radius: 120)
         self.view.addSubview(topView)
-                
+        
         
         let bottomView = CBPolygonView.init(frame: .init(x: 0, y: screenHeight/2.0, width: screenWidth, height: screenHeight/2.0))
         bottomView.type = .circle
