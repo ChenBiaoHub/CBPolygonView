@@ -1,8 +1,13 @@
 Pod::Spec.new do |s|
   s.name     = 'CBPolygonView'
   s.version  = '0.0.1'
-  s.license  = "MIT"  #开源协议
+  s.license  = 'MIT'  #开源协议
   s.summary  = '能力分布图 蜘蛛网图' #简单的描述
+  s.description = <<-DESC
+
+                    能力分布图，可以切换布局，线条颜色，虚实线等
+
+                  DESC
   s.homepage = 'https://github.com/ChenBiaoHub/CBPolygonView' #主页
 
   s.author   = { 'ChenBiaoHub' => 'chenbiao9494@163.com' } #作者
