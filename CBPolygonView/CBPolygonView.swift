@@ -103,11 +103,6 @@ class CBPolygonView: UIView {
         self.backgroundColor = .red
         self.myCenter = CGPoint.init(x: frame.width/2.0, y: frame.height/2.0)
     }
-    
-    required init?(coder aDecoder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
-    }
-    
 
     /// 绘制能力图
     ///
@@ -126,7 +121,19 @@ class CBPolygonView: UIView {
         self.titles = aTitles
         getAllPoint()
     }
+    required init?(coder aDecoder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
     
+}
+
+
+
+
+
+
+
+extension CBPolygonView {
     private func getAllPoint() {
         let a = CGFloat.pi * 2.0/CGFloat(self.side)
         for i in 0..<self.side {
@@ -143,7 +150,7 @@ class CBPolygonView: UIView {
                 if self.titles!.count > 0 {
                     let x3 = self.myCenter.x + (cos(a * CGFloat(i) + self.angle) * (self.maxRadius + self.titleDistance))
                     let y3 = self.myCenter.y - (sin(a * CGFloat(i) + self.angle) * (self.maxRadius + self.titleDistance))
-                    self.titleCenter.append(.init(x: x3, y: y3))                    
+                    self.titleCenter.append(.init(x: x3, y: y3))
                 }
             }
         }
