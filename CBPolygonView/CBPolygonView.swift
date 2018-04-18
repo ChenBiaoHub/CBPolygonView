@@ -59,7 +59,7 @@ class CBPolygonView: UIView {
     public var titleColor : UIColor = UIColor.init(white: 1, alpha: 1)
     
     /** 内圈 */
-    public var circles : [CGFloat] = [0.8, 0.6]
+    public var circles : [CGFloat]? = [0.8, 0.6]
     /** 区域内填充颜色 */
     public var fillColor : UIColor?
     
@@ -110,11 +110,9 @@ class CBPolygonView: UIView {
     ///   - aPercent: 能力占比（例如[0.8, 0.9, 0.6]）
     ///   - aTitles: 能力描述
     ///   - aRadius: 外圈圆的半径
-    public func cb_drawPolygon(percent aPercent : [CGFloat], titles aTitles : [String], radius aRadius : CGFloat) {
-        if aPercent.count < 3 {
-            print("边数要大于3才能画能力图")
-            return
-        }
+    public func cb_drawPolygon(percent aPercent : [CGFloat], titles aTitles : [String]?, radius aRadius : CGFloat) {
+        assert(aPercent.count > 3, "边数要大于3才能画能力图")
+
         self.percent = aPercent
         self.side = aPercent.count
         self.maxRadius = aRadius
@@ -146,13 +144,13 @@ extension CBPolygonView {
             let y2 = y1 * self.percent[i] + self.myCenter.y * (1-self.percent[i])
             self.apexs.append(.init(x: x2, y: y2))
             
-            if (self.titles != nil) {
-                if self.titles!.count > 0 {
-                    let x3 = self.myCenter.x + (cos(a * CGFloat(i) + self.angle) * (self.maxRadius + self.titleDistance))
-                    let y3 = self.myCenter.y - (sin(a * CGFloat(i) + self.angle) * (self.maxRadius + self.titleDistance))
-                    self.titleCenter.append(.init(x: x3, y: y3))
-                }
-            }
+            
+            guard let titles = self.titles else { return }
+            guard titles.count > 0 else { return }
+            
+            let x3 = self.myCenter.x + (cos(a * CGFloat(i) + self.angle) * (self.maxRadius + self.titleDistance))
+            let y3 = self.myCenter.y - (sin(a * CGFloat(i) + self.angle) * (self.maxRadius + self.titleDistance))
+            self.titleCenter.append(.init(x: x3, y: y3))
         }
     }
     
@@ -170,9 +168,11 @@ extension CBPolygonView {
             context.addArc(center: self.myCenter, radius: self.maxRadius, startAngle: 0, endAngle: CGFloat(Double.pi * 2.0), clockwise:true)
             context.drawPath(using: .stroke)
             
-            for percent in self.circles {
-                context.addArc(center: self.myCenter, radius: self.maxRadius * percent, startAngle: 0, endAngle: CGFloat(Double.pi * 2.0), clockwise:true)
-                context.drawPath(using: .stroke)
+            if let circles = self.circles {
+                for percent in circles {
+                    context.addArc(center: self.myCenter, radius: self.maxRadius * percent, startAngle: 0, endAngle: CGFloat(Double.pi * 2.0), clockwise:true)
+                    context.drawPath(using: .stroke)
+                }
             }
             break
         case .polygon:
@@ -180,15 +180,16 @@ extension CBPolygonView {
             context.closePath()
             context.drawPath(using: .stroke)
             
-            
-            for percent in self.circles {
-                var apexPoints : [CGPoint] = []
-                for apex in self.maxApexs {
-                    apexPoints.append(.init(x: self.myCenter.x * (1-percent) + apex.x * percent, y:self.myCenter.y * (1-percent) +  apex.y * percent))
-                }
-                context.addLines(between: apexPoints)
-                context.closePath()
-                context.drawPath(using: .stroke)
+            if let circles = self.circles {
+                for percent in circles {
+                    var apexPoints : [CGPoint] = []
+                    for apex in self.maxApexs {
+                        apexPoints.append(.init(x: self.myCenter.x * (1-percent) + apex.x * percent, y:self.myCenter.y * (1-percent) +  apex.y * percent))
+                    }
+                    context.addLines(between: apexPoints)
+                    context.closePath()
+                    context.drawPath(using: .stroke)
+                }                
             }
             break
         }
@@ -236,21 +237,20 @@ extension CBPolygonView {
         }
         
         //标题
-        if self.titles != nil {
-            if self.titles!.count > 0 {
-                for i in 0..<self.percent.count {
-                    if i < self.titles!.count {
-                        let titleLable = UILabel.init()
-                        titleLable.font = self.titleFont
-                        titleLable.textColor = self.titleColor
-                        titleLable.text = self.titles![i]
-                        self.addSubview(titleLable)
-                        titleLable.frame = CGRect.init(origin: self.titleCenter[i], size: .init(width: 35, height: 25))
-                        titleLable.sizeToFit()
-                        titleLable.center = self.titleCenter[i]
-                    }
-                }
-            }
+        guard let titles = self.titles else { return }
+        guard titles.count > 0 else { return }
+        
+        for i in 0..<self.percent.count {
+            guard i < titles.count else { return }
+            
+            let titleLable = UILabel.init()
+            titleLable.font = self.titleFont
+            titleLable.textColor = self.titleColor
+            titleLable.text = titles[i]
+            self.addSubview(titleLable)
+            titleLable.frame = CGRect.init(origin: self.titleCenter[i], size: .init(width: 35, height: 25))
+            titleLable.sizeToFit()
+            titleLable.center = self.titleCenter[i]
         }
     }
 }
